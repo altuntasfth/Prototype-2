@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class MoveForward : MonoBehaviour
 {
-    public float verticalInput;
-    public float speed = 20.0f;
+    public float speed = 40.0f;
 
     private void Start()
     {
@@ -15,11 +14,7 @@ public class MoveForward : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        verticalInput = Input.GetAxis("Vertical");
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            transform.Translate(Vector3.forward * verticalInput * speed * Time.deltaTime);
-        }
+        transform.Translate(Vector3.forward * speed * Time.deltaTime);
         
         
     }
