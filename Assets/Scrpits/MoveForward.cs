@@ -6,8 +6,8 @@ public class MoveForward : MonoBehaviour
 {
     public float verticalInput;
     public float speed = 20.0f;
-    // Start is called before the first frame update
-    void Start()
+
+    private void Start()
     {
         
     }
